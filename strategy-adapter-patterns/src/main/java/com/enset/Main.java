@@ -12,5 +12,9 @@ public class Main {
 
         context.setCompressImage(new CompressImage1());
         context.compresser(new int[]{1,2});
+
+        Adapter adapter = new Adapter();
+        context.setFilterImage(adapter);
+        context.filter(new int[]{1,2});
     }
 }
